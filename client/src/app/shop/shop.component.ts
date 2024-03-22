@@ -32,11 +32,8 @@ export class ShopComponent implements OnInit {
   }
 
   getProducts() {
-    debugger;
     this.shopService.getProducts(this.shopParams).subscribe(
       (response) => {
-        debugger;
-
         this.products = response.data;
         console.log('List of products', this.products);
         this.shopParams.pageNumber = response.pageIndex;
