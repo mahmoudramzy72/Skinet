@@ -6,3 +6,4 @@ export class ShopParams {
   pageSize = 18;
   search = '';
 }
+
